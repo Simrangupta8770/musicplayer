@@ -1,0 +1,56 @@
+.main_div{
+    height:100vh;
+    background-color: #f6f6f6;
+}
+.music_container{
+    width:20rem;
+    height:27rem;
+    background-color: #ffffff;
+}
+.img_container{
+    width:15rem;
+    height:15rem;
+    margin: auto;
+    box-sizing: border-box;
+}
+img{
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow:  0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+.music-controls{
+    width:15rem;
+}
+.music_controls .fas{
+ filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4)); 
+ cursor: pointer;  
+}
+.music_controls .fas:hover{
+    color:grey !important;
+}
+.music_controls .fa-play:hover{
+background-color: #f6f6f6 !important;
+color:black !important;
+box-shadow:  0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+}
+.anime{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media(max-width:330px){
+    .music_container{
+        width:15rem;
+        height:25rem;
+    }
+    .img_container{
+        width:12rem;
+        height:12rem;
+    }
+}
